@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/template.css">
+</head>
+
+<body>
+    <div id="all-content">
+        <header id="menu">
+            <div id="menu-div">
+                <a href="#" id="logo">Bloco de Orçamentos</a>
+                <nav>
+                    <a href="#" class="link-menu">Pedidos</a>
+                    <a href="#" class="link-menu">Novo Pedido</a>
+                    <a href="#" id="menu-mobile">Menu</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Tudo acontece aqui.... -->
+            <form action="#" id="form-produto">
+                <div class="form-group">
+                    <label for="#">Representante<br>
+                        <select name="" id="">
+                            <option value="1000"></option>
+                            <option value="011">011</option>
+                        </select>
+                        <input type="text" placeholder="Seu nome">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="select-produto">Produto<br>
+                        <select name="" id="select-produto">
+                            <option value="000">Unknown</option>
+                            <option value="003">Água Mineral 500ML</option>
+                            <option value="004">Refrigerante 2L</option>
+                            <option value="005">Água com gás 500ML</option>
+                            <option value="006">HHO 300ML</option>
+                            <option value="007">Água sem gás 500ML</option>
+                            <option value="008">Água com gás 1.5L</option>
+                        </select>
+                    </label>
+                    <label for="quantidade">Quantidade<br>
+                        <input type="number" id="quantidade">
+                    </label>
+                    <label for="valor">Valor<br>
+                        <input type="number" id="valor">
+                    </label>
+                    <button id="add-produto" class="bt azul">Adicionar</button>
+                </div>
+                <div id="produtos-adicionados">
+                    <!-- Somente visual para o usuario -->
+                    <ul id="ul-produtos">
+                        <!-- <li> <span>003</span> <p>Agua Mineral 500 ML</p> <span>100 UN</span> <span class="valor">8.50</span> <a href="#" class="produto-excluir">Exluir</a></li> -->
+                </div>
+                <div class="form-group">
+                    <label for="#">Prazo<br>
+                        <select name="" id="">
+                            <option value="1000"></option>
+                            <option value="20">20 dias</option>
+                        </select>
+                    </label>
+                    <label for="dc"><input type="checkbox" name="dc" id="dc">DC</label>
+                    <label for="rs"><input type="checkbox" name="rs" id="rs">R$</label>
+                    <label for="ch"><input type="checkbox" name="ch" id="ch">CH</label>
+                    <label for="dup"><input type="checkbox" name="dup" id="dup">DUP</label>
+                    <label for="cif"><input type="checkbox" name="cif" id="cif">CIF</label>
+                    <label for="fob"><input type="checkbox" name="fob" id="fob">FOB</label>
+                    <label for="u"><input type="checkbox" name="u" id="u">U</label>
+                    <label for="e"><input type="checkbox" name="e" id="e">E</label>
+                </div>
+
+                <label for="">Total Geral R$<br>
+                    <input type="number" name="total" id="total-geral" value="0.0" readonly>
+                </label>
+                <label for="">Observação<br>
+                    <textarea name="" id="" cols="30" rows="10" maxlength="200" placeholder="200 Caracteres"></textarea>
+                </label>
+                <button id="salvar" class="bt verde">Salvar</button>
+            </form>
+        </div>
+    </div>
+    <script src="resources/js/novo-pedido.js"></script>
+</body>
+
+</html>
