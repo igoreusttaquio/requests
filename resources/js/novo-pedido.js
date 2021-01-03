@@ -3,6 +3,8 @@
     
 
     // Preencher LI
+    const representant = document.getElementById("representant");
+    createSelectsRepresentant();
     const ul = document.getElementById("ul-produtos");
     const selectProduto = document.getElementById("select-produto");
     createSelects();
@@ -91,7 +93,28 @@
             option.setAttribute("value", obj.codigo);
             option.textContent = obj.descricao;
             selectProduto.appendChild(option);
+            // console.log(option);
+        }) 
+    }
+
+    function getDataRepresentant() {
+        let url = 'http://192.168.1.4/pedidos/representante.php';
+        let xhttp = new XMLHttpRequest();
+        xhttp.open("GET", url, false);
+        xhttp.send();//A execução do script pára aqui até a requisição retornar do servidor
+
+        let jsonParse = JSON.parse(xhttp.responseText);
+        return jsonParse;
+    }
+
+    function createSelectsRepresentant() {
+        [...getDataRepresentant()].forEach(obj => {
+            let option = document.createElement("option");
+            option.setAttribute("value", obj.codigo);
+            option.textContent = obj.nome;
+            representant.appendChild(option);
             console.log(option);
         }) 
     }
+
 })()
