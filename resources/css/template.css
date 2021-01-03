@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#all-content {
+    width: 100%;
+    height: auto;
+}
+    #menu {
+        width: 100%;
+        height: auto;
+        background: #222831;
+    }
+        #menu-div {
+            display: flex;
+            width: 100%;
+            max-width: 960px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+            #menu-div a {
+                text-decoration: none;
+                color: #fafafa;
+            }
+            #logo {
+                font-size: 2em;
+            }
+            .link-menu {
+                font-size: 1.2em;
+                padding: 10px;
+                display: inline-block;
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+            }
+            .link-menu:hover {
+                background-color: #323841;
+                border-bottom: 4px solid #1b92f3;
+            }
+    .container {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        margin-top: 10px;
+        box-shadow: 0px 5px 16px rgba(22, 22, 22, 0.4);
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+.bt {
+    padding: 12px;
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+    color: #fafafa;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 16px rgba(22, 22, 22, 0.4);
+
+}
+.azul {
+    background-color: #0779E4;
+    
+}.azul:hover {
+    background-color: #116abd;
+}
+
+.verde {
+    background-color: #0ba168;
+}.verde:hover {
+    background-color: #0f7a51;  
+}
+/* PAGINA FORMULARIO PRODUTO */
+
+#form-produto {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+    .form-group {
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #produtos-adicionados {
+        width: 100%;
+        max-width: 480px;
+        min-height: 200px;
+        max-height: 200px;
+        overflow: scroll;
+        border: 1px solid #ccc;
+        padding: 6px 4px;
+        border-radius: 4px;
+    }
+
+    #produtos-adicionados  ul li {
+        padding: 10px;
+        background-color: #d8dee9;
+        margin: 6px 0;
+        border: 1px solid #3898ec;
+        border-radius: 4px;
+        color: #323841;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .produto-excluir {
+        color: #e65959;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .produto-excluir:hover {
+        text-decoration: underline;
+    }
+    #form-produto label{
+        margin-right: 10px;
+        padding: 10px 0;
+        font-size: 1.2em;
+        color: #323841;
+    }
+    #form-produto input[type="text"],
+    #form-produto input[type="number"],
+    select {
+        padding: 8px;
+        color: #323841; 
+    }
+    
+    #form-produto input {
+        border-radius: 6px;
+        border: 1px solid #aaa;
+    }
+
+    #form-produto textarea {
+        padding: 4px;
+        width: 100%;
+        max-width: 480px;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+    }
